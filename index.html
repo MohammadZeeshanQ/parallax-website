@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='description' content="Front end developer from planet earth, looking forward to grow and learn more.">
+    <link rel="stylesheet" href="./assets/css/index.css">
     <title>Earth Dev | Zeeshan</title>
 </head>
 <body>
@@ -12,11 +13,13 @@
     <!-- Top Intro section -->
     <section >
         <div class="intro-container">
-            <div class="intro-wrapper">
-                <div class="intro-div-text">
-                    <h2>Hi, I'm Zeeshan.</h2>
-                    <h4>Welcome to Earth Developer.</h4>
+            <div class="intro-wrapper" >
+                <div class="intro-div-text rellax" data-rellax-speed="-7">
+                    <h1 class='intro-header' >Hi, I'm ZEESHAN.</h1>
+                    <h3 class='intro-subheader'>Welcome to Earth Developer.</h3>
                 </div>
+                <img src="./assets/images/Sun.png" alt="Bright Sun" class="intro-sun-image rellax"/>
+                <img src="./assets/images/Saturn.png" alt="Bright Sun" class="intro-saturn-image rellax"/>
                 <img src="./assets/images/PinkWave.png" alt="Pink water Waves" class="intro-background-image"/>
             </div>
         </div>
@@ -26,24 +29,67 @@
     <section >
         <div class="project-container">
             <div class="project-wrapper">
-
+                <div class="project-text-div">
+                    <h2 class="project-div-header">Projects</h2>
+                    <ul class='project-ul'>
+                        <a href='#' class='project-links'><li class='project-li-text'>Redesigned City University Student Portal Landing Page(React.js)</li></a>
+                        <a href='#' class='project-links'><li class='project-li-text'>Mountainer's Landing Page(React.js)</li></a>
+                        <a href='#' class='project-links'><li class='project-li-text'>Basic Landing Page(React.js)</li></a>
+                        <a href='#' class='project-links'><li class='project-li-text'>Dashboard Template</li></a>
+                        <a href='#' class='project-links'><li class='project-li-text'>SignIn/ LogIn Template</li></a>
+                    </ul>
+                </div>
             </div>
-            <img src="./assets/images/Rocket.png" alt="Space rocket" class="project-rocket-image"/>
-            <img src="./assets/images/ShootingStart.png" alt="Shooting star" class="project-rocket-image"/>
+            <img src="./assets/images/Rocket.png" alt="Space rocket" class="project-rocket-image rellax" data-rellax-speed="2"/>
+            <img src="./assets/images/ShootingStart.png" alt="Shooting star" class="project-ShootStar-image rellax" data-rellax-speed="-2"/>
         </div>
     </section>
 
     <!-- About Me Section -->
     <section >
+        <div class="aboutMe-container">
+            <div class="aboutMe-wrapper">
+                <h1 class='aboutMe-main-header'>What am I?</h1>
+                <div class="aboutMe-grid">
 
+                    <div class="aboutMe-gridItem rellax" data-rellax-speed='-0.3'>
+                       <img src="./assets/images/Jupiter.png" class="aboutMe-planet-image" /> 
+                       <h2 class='aboutMe-header'>Web Designer</h2>
+                    </div>
+
+                    <div class="aboutMe-gridItem">
+                        <img src="./assets/images/Mercury.png" class="aboutMe-planet-image" /> 
+                        <h2 class='aboutMe-header'>Front-End Developer</h2>
+                     </div>
+
+                     <div class="aboutMe-gridItem rellax" data-rellax-speed="0.3">
+                        <img src="./assets/images/Venus.png" class="aboutMe-planet-image" /> 
+                        <h2 class='aboutMe-header'>Graphic Designer</h2>
+                     </div>
+
+                </div>
+            </div>
+        </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    
+    <script>
+        let rellax = new Rellax('.rellax');
+    </script>
     
 </body>
 
 <!-- Footer -->
 <footer>
     <div class="footer-container">
-
+        <div class="footer-wrapper">
+            <div class='social-div'>
+                    <img src="./assets/images/icons/facebook.png" class="footer-icon-image" alt="Facebook" /> 
+                    <img src="./assets/images/icons/linkedin.png" class="footer-icon-image"  alt="LinkedIn"/> 
+                    <img src="./assets/images/icons/github.png" class="footer-icon-image" alt="Github"> 
+            </div>
+        </div>
     </div>
 </footer>
 </html>
